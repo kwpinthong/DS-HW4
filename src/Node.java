@@ -1,18 +1,20 @@
 //package hw4;
 
-public class Node {
+public class Node extends BTreePrinter{
 
     Node left;
     Node right;
     int data;
 
     public Node(int data) {
-
+        this.data = data;
+        this.left = null;
+        this.right = null;
     }
 
     public void printTree() {
         // uncomment the following line (and fix the error)
-        // super.printTree(this);
+         super.printTree(this);
     }
 
     public void printBFT() {
